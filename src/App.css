@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background: #060c19;
+}
+
+#root {
+  min-height: 100vh;
+  background: #060c19;
+}
+
+.app {
+  min-height: 100vh;
+  background: #060c19;
+}
+
+.page-content {
+  padding-top: 72px;
+}

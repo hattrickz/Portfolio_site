@@ -1,0 +1,212 @@
+.about-container {
+    padding: 60px 40px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-header h3 {
+    color: #09bfd7;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    margin: 0 0 12px;
+}
+
+.about-header h1 {
+    color: white;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.2;
+}
+
+.about-header strong {
+    color: #7588a3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-section-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-text-p {
+    flex: 1 1 0;
+    min-width: 0;
+    color: #7588a3;
+    font-size: 17px;
+    line-height: 1.85;
+    text-align: left;
+}
+
+.about-text-p p {
+    margin: 0 0 1.4rem;
+}
+
+.about-text-p span {
+    color: white;
+    font-weight: 600;
+}
+
+.about-text-p button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #09bfd7;
+    color: #0a1628;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.about-text-p button:hover {
+    background: #07a8be;
+}
+
+.about-box-container {
+    flex: 1 1 0;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 14px;
+    padding: 18px 20px;
+    background: #0d1b2a;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 1px #1a3a4a55, inset 0 0 0 1px #09bfd720;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.about-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        #09bfd7 0%,
+        #09bfd740 40%,
+        transparent 60%,
+        #09bfd730 100%
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.about-box:hover {
+    background: #0f2235;
+    box-shadow: 0 0 0 1px #09bfd750, inset 0 0 0 1px #09bfd730;
+}
+
+.about-box:hover::before {
+    background: linear-gradient(
+        135deg,
+        #09bfd7 0%,
+        #09bfd7aa 50%,
+        #09bfd730 80%,
+        transparent 100%
+    );
+}
+
+.about-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 10px;
+    background: #0a1e2e;
+    border: 1px solid #09bfd720;
+    transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-box-icon > * {
+    color: #09bfd7;
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.about-box:hover .about-box-icon {
+    background: #09bfd7;
+    border-color: #09bfd7;
+    transform: scale(1.1);
+}
+
+.about-box:hover .about-box-icon > * {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        padding: 40px 24px;
+    }
+
+    .about-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-section-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .about-text-p {
+        text-align: left;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-text-p button {
+        display: inline-flex;
+        margin: 10px 0 0;
+    }
+
+    .about-box-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 30px 16px;
+    }
+
+    .about-text-p {
+        font-size: 15px;
+    }
+
+    .about-box-container {
+        grid-template-columns: 1fr;
+    }
+}
