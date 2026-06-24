@@ -26,8 +26,16 @@ export default function Skills() {
                         <span>TypeScript</span>
                         <span>React</span>
                         <span>Next.js</span>
+                        <span>Angular</span>
                         <span>Tailwind CSS</span>
+                        <span>Redux</span>
                         <span>Responsive Design</span>
+                        <span>Hooks</span>
+                        <span>ReactStrap</span>
+                        <span>BootStrap</span>
+                        <span>SVG</span>
+                        <span>Canvas</span>
+
                     </div>
                 </div>
 
@@ -47,6 +55,12 @@ export default function Skills() {
                         <span>Express.js</span>
                         <span>FastAPI</span>
                         <span>Java</span>
+                        <span>NestJS</span>
+                        <span>Socket.io</span>
+                        <span>JSON</span>
+                        <span>GraphQL</span>
+                        <span>Context API</span>
+                        <span>Golang</span>
                     </div>
                 </div>
 
@@ -55,7 +69,7 @@ export default function Skills() {
                         <div className="skills-icon">
                             <GiBrain size={22} />
                         </div>
-                        <h2>AI & Automation</h2>
+                        <h2>AI / Automation & Mobile Development</h2>
                     </div>
                     <div className="skills-tags">
                         <span>Gemini AI API</span>
@@ -64,6 +78,12 @@ export default function Skills() {
                         <span>Chatbot Development</span>
                         <span>AI Integration</span>
                         <span>Workflow Automation</span>
+                        <span>React Native</span>
+                        <span>Expo Go</span>
+                        <span>React Native CLI </span>
+                        <span>Expo Frameworks</span>
+                        <span>C++</span>
+                        <span>C#</span>
                     </div>
                 </div>
 
@@ -72,16 +92,35 @@ export default function Skills() {
                         <div className="skills-icon">
                             <FaTools size={22} />
                         </div>
-                        <h2>Tools & Platforms</h2>
+                        <h2>DevOps & Tools</h2>
                     </div>
                     <div className="skills-tags">
                         <span>Git</span>
                         <span>GitHub</span>
+                        <span>Gitea</span>
                         <span>VS Code</span>
                         <span>Vercel</span>
                         <span>Netlify</span>
                         <span>Supabase</span>
-                        <span>Figma</span>
+                        <span>IntelliJ</span>
+                        <span>Agile</span>
+                        <span>Scrum</span>
+                        <span>Trello</span>
+                        <span>Jest</span>
+                        <span>Discord </span>
+                        <span>Google Workspaces</span>
+                        <span>Jira</span>
+                        <span>AWS</span>
+                        <span>Babel</span>
+                        <span>Azure</span>
+                        <span>Yarn</span>
+                        <span>Npm</span>
+                        <span>UI/UX</span>
+                        <span>Webpack</span>
+                        <span>Teams</span>
+                        <span>Slack</span>
+                        <span>Skypee</span>
+                        <span>Technical Documentation</span>
                     </div>
                 </div>
             </div>

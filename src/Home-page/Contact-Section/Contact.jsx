@@ -41,7 +41,7 @@ export default function Contact() {
                                 <MdEmail size={22} />
                             </div>
                             <div className="channel-info">
-                                <span className="channel-title">YOUR_EMAIL@gmail.com</span>
+                                <span className="channel-title">hattrickjr096@gmail.com</span>
                                 <span className="channel-sub">Best for project inquiries</span>
                             </div>
                         </a>
